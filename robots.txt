@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shirtslab-mapo.xyz/sitemap.xml
-Sitemap: https://shirtslab-mapo.xyz/sitemap-index.xml
+Sitemap: https://daeheung-nightlife-note.mapo-shirts-insider.xyz/sitemap.xml
