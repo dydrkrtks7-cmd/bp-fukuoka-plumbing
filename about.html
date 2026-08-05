@@ -1,343 +1,119 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>망원 코인노래방 추천정보 | 프리미엄 사운드 경험</title>
-    <meta name="description" content="망원역 인근 최고의 코인노래방 추천정보를 제공합니다. 최신 하이엔드 음향 시스템, 프라이빗한 부스 구조, 위생적인 환경을 자랑하는 프리미엄 노래방의 상세 가이드.">
-    <meta name="keywords" content="망원 코인노래방, 망원 노래방 추천, 프라이빗 코인노래방, 고품질 노래방, 망원역 노래방">
-    <link rel="canonical" href="https://shirtslab-mapo.xyz/about.html">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="망원 코인노래방 추천정보 | 프리미엄 사운드 경험">
-    <meta property="og:description" content="망원역 인근 최고의 코인노래방 추천정보를 제공합니다. 최신 하이엔드 음향 시스템, 프라이빗한 부스 구조, 위생적인 환경을 자랑하는 프리미엄 노래방의 상세 가이드.">
-    <style>
-        /* CSS DNA: Editorial Luxury / Ivory-Ink */
-        :root {
-            --bg-color: #FDFBF7; /* Ivory */
-            --text-primary: #1A1A1A; /* Ink */
-            --text-secondary: #4A4A4A;
-            --accent-color: #A68B5C; /* Muted Gold */
-            --border-color: #E0E0E0;
-            --font-main: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
-            --font-serif: 'Times New Roman', serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: var(--font-main);
-            line-height: 1.7;
-            letter-spacing: -0.01em;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: var(--accent-color);
-        }
-
-        /* Layout */
-        .container {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            padding: 30px 0;
-            border-bottom: 1px solid var(--border-color);
-            position: sticky;
-            top: 0;
-            background-color: var(--bg-color);
-            z-index: 1000;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            font-size: 0.95rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        /* Hamburger Menu */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-
-        .menu-toggle span {
-            width: 25px;
-            height: 2px;
-            background-color: var(--text-primary);
-            transition: 0.3s;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-family: var(--font-serif);
-            font-size: 3.5rem;
-            font-weight: 400;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Content Sections */
-        .section {
-            padding: 80px 0;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .section-title {
-            font-family: var(--font-serif);
-            font-size: 2rem;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-        }
-
-        .card {
-            background: #fff;
-            padding: 40px;
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent-color);
-        }
-
-        .card h3 {
-            font-family: var(--font-serif);
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-
-        .card p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-        }
-
-        .text-block {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: justify;
-        }
-
-        .text-block p {
-            margin-bottom: 20px;
-        }
-
-        .highlight {
-            color: var(--accent-color);
-            font-weight: 600;
-        }
-
-        /* FAQ */
-        .faq-item {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        .faq-question {
-            font-weight: 700;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .faq-answer {
-            color: var(--text-secondary);
-        }
-
-        /* Footer */
-        footer {
-            padding: 50px 0;
-            text-align: center;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border-color);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--bg-color);
-                padding: 20px;
-                border-bottom: 1px solid var(--border-color);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
-  <meta property="og:url" content="https://shirtslab-mapo.xyz/about.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>대흥 유흥 정보 — 동선·업종·분위기까지 현장 메모</title>
+<meta name="description" content="직접 발로 뛰면서 정리한 대흥 유흥 정보. 방문 전에 알면 좋은 동선ㆍ업종별 특징ㆍ상황별 선택 기준을 담았습니다.">
+<meta name="keywords" content="대흥 유흥, 대흥 유흥 추천, 대흥 유흥 정보, 대흥 유흥 가이드, 대흥 유흥 동선">
+<link rel="canonical" href="https://shirtslab-mapo.xyz/about.html">
+<meta property="og:title" content="대흥 유흥 정보 — 동선·업종·분위기까지 현장 메모">
+<meta property="og:description" content="직접 발로 뛰면서 정리한 대흥 유흥 정보. 방문 전에 알면 좋은 동선ㆍ업종별 특징ㆍ상황별 선택 기준을 담았습니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shirtslab-mapo.xyz/about.html">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #f7f4f0; color: #1e1e1e; font-family: 'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif; line-height: 1.8; padding: 1.5rem; }
+.m-body-o24v { max-width: 820px; margin: 0 auto; background: #ffffff; border-radius: 28px; padding: 2.8rem 2.2rem; box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+.m-body-o24v h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.6rem; color: #0f0f0f; line-height: 1.3; }
+.m-body-o24v p { margin-bottom: 1.2rem; font-size: 1rem; color: #2c2c2c; }
+.r-list-brpt { list-style: none; padding: 0; margin: 1.6rem 0; }
+.r-list-brpt li { padding: 0.9rem 1.2rem; margin-bottom: 0.8rem; background: #faf8f6; border-radius: 16px; border-left: 4px solid #c8b8a8; font-size: 0.98rem; color: #1e1e1e; }
+.q-wrap-p3hy { margin: 1.6rem 0; padding: 1.4rem 1.6rem; background: #f7f4f0; border-radius: 20px; }
+.q-wrap-p3hy:first-child { margin-top: 0; }
+.q-wrap-p3hy strong { display: block; font-size: 1.05rem; margin-bottom: 0.5rem; color: #1a1a1a; }
+.q-wrap-p3hy p { margin-bottom: 0.4rem; font-size: 0.96rem; }
+.n-nav-px9v { display: flex; flex-wrap: wrap; gap: 0.8rem 1.6rem; padding: 1.2rem 0; margin-bottom: 2rem; border-bottom: 1px solid #e8e2da; font-size: 0.92rem; }
+.n-nav-px9v a { color: #5a4a3a; text-decoration: none; padding: 0.2rem 0; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.n-nav-px9v a:hover { border-color: #5a4a3a; }
+.n-nav-px9v time { margin-left: auto; color: #8a7a6a; font-size: 0.85rem; }
+.r-body-n7rw { margin: 1.8rem 0; }
+.r-body-n7rw p { margin-bottom: 1rem; }
+.r-body-n7rw blockquote { border-left: 4px solid #d8cdc0; padding: 1rem 1.4rem; margin: 1.2rem 0; background: #faf8f6; border-radius: 0 16px 16px 0; font-style: italic; color: #3a3a3a; }
+@media (max-width: 768px) { .m-body-o24v { padding: 1.6rem 1.2rem; } .m-body-o24v h1 { font-size: 1.6rem; } .n-nav-px9v { flex-direction: column; gap: 0.4rem; } .n-nav-px9v time { margin-left: 0; } .q-wrap-p3hy { padding: 1rem 1.2rem; } }
+</style>
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
+<div class="m-body-o24v">
+  <nav class="n-nav-px9v">
+    <a href="./">홈</a>
+    <a href="./info">정보</a>
+    <a href="./guide">가이드</a>
+    <a href="./places">장소</a>
+    <time datetime="2025-05-12">2025.05.12 업데이트</time>
+  </nav>
+  <h1>대흥 유흥 정보</h1>
+  <p>여러 번 다녀보고 나서야 알게 된 것들이 꽤 있어요. 첫 방문 때는 그냥 "여기 괜찮다"는 말만 믿고 갔다가 동선이 꼬이거나, 인원에 맞지 않는 곳을 골라서 분위기가 살짝 어색해지기도 했고요. 이 노트는 그런 시행착오를 줄이려고 정리한 정보입니다.</p>
+  <p>대흥 쪽은 생각보다 블록 단위로 분위기가 달라져서, 같은 유흥업종이라도 위치에 따라 접근성이나 주변 편의시설이 확연히 다릅니다. 아래 항목들을 하나씩 보시면 본인한테 맞는 선택을 좁히는 데 도움이 될 거예요.</p>
 
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">MANGWON GUIDE</div>
-                <div class="menu-toggle" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="nav-links">
-                    <a href="#overview">개요</a>
-                    <a href="#features">시스템</a>
-                    <a href="#environment">환경</a>
-                    <a href="#faq">자주 묻는 질문</a>
-                    <a href="tel:010-0000-0000" class="highlight">전화 문의</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+  <div class="r-body-n7rw">
+    <h2 style="font-size:1.4rem;margin:1.8rem 0 1rem;">📍 동선으로 보는 대흥 유흥권</h2>
+    <p>대흥역을 중심으로 크게 세 방향으로 유흥가가 펼쳐져 있습니다. 역에서 가까운 쪽은 접근성이 좋은 대신 주차 공간이 좁고, 한 블록만 안쪽으로 들어가도 조용한 분위기의 장소들이 섞여 있어요.</p>
+    <p>첫 번째는 역전쪽 상권 — 2~4인 기준으로 가볍게 들를 수 있는 곳들이 밀집해 있습니다. 두 번째는 도로변 쪽으로 빠지는 라인인데, 이쪽은 규모가 있는 업소들이 자리 잡고 있어서 단체 방문객이 많습니다. 세 번째는 주거지와 맞닿은 골목 안쪽인데, 여기는 분위기가 차분하고 개별 공간이 넓은 편이에요.</p>
+    <p>동선을 짤 때는 "몇 시에 도착해서 어디로 빠질지"까지 고려하는 게 좋습니다. 택시를 잡기 쉬운 위치인지, 대리운전 호출이 원활한 쪽인지도 실제로 와보면 꽤 중요해요.</p>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>망원 코인노래방<br>프리미엄 사운드 가이드</h1>
-                <p>망원역 인근에서 엄선된 최고의 코인노래방 정보를 제공합니다.<br>데이터에 기반한 음향 분석과 위생 기준을 충족하는 프라이빗 공간을 소개합니다.</p>
-            </div>
-        </section>
+    <h2 style="font-size:1.4rem;margin:1.8rem 0 1rem;">🏷️ 업종별 특징 훑어보기</h2>
+    <p>대흥 유흥 업종을 크게 나누면 세 가지 정도로 볼 수 있습니다. 하나는 룸 형태의 프라이빗한 공간을 갖춘 곳, 다른 하나는 오픈된 분위기에서 자유롭게 즐기는 스타일, 마지막으로 개인화된 서비스 위주의 장소입니다. 어느 쪽이 좋다고 단정하기보다는 모임의 성격에 맞추는 게 좋아요.</p>
+    <p>룸 형태는 이야기를 나누는 시간이 많은 모임에 적합합니다. 반대로 오픈된 분위기는 인원이 유동적일 때나 처음 보는 사람들끼리도 자연스럽게 섞일 수 있다는 장점이 있고요. 개인화된 서비스 쪽은 사전 예약이 필수인 경우가 많으니까 일정이 확정되면 바로 연락해보는 걸 추천합니다.</p>
 
-        <section id="overview" class="section">
-            <div class="container">
-                <h2 class="section-title">지역별 선별 기준 및 개요</h2>
-                <div class="text-block">
-                    <p>망원동 일대는 홍대와 인접하여 다양한 엔터테인먼트 시설이 밀집해 있으나, 진정한 '프리미엄 코인노래방'을 찾기 위해서는 까다로운 기준이 필요합니다. 본 가이드는 단순한 나열을 넘어, 실제 음향 장비의 스펙, 공간의 프라이버시 수준, 그리고 위생 관리 상태를 종합적으로 분석하여 선별된 정보를 제공합니다.</p>
-                    <p>특히 망원역 도보 5 분 이내의 접근성을 갖춘 시설 중, 최신 디지털 사운드 프로세싱 장비를 도입하고 전 좌석 개인 환기 시스템을 갖춘 곳을 중심으로 추천합니다. 이는 이용자의가창 경험을 극대화하고 건강을 보호하기 위한 필수 조건입니다.</p>
-                </div>
-            </div>
-        </section>
+    <h2 style="font-size:1.4rem;margin:1.8rem 0 1rem;">👥 인원·시간·목적별 선택 기준</h2>
+    <p>가장 자주 듣는 질문이 "몇 명이서 가면 좋은 곳이 어디예요?"입니다. 대흥 쪽은 2~3인 전용 공간이 마련된 곳과 6인 이상 수용 가능한 곳의 차이가 꽤 큽니다. 특히 주말에는 인원별로 받을 수 있는 객실 수가 제한되니까 미리 확인하는 게 안전해요.</p>
+    <p>시간대도 고려해야 할 변수입니다. 저녁 초입(7~9시)은 자리가 비교적 여유 있지만 본격적인 시간대(10시 이후)는 예약이 없으면 대기할 가능성이 높아요. 목적이 회식인지, 친구끼리 가벼운 자리인지, 아니면 특별한 날을 기념하는 자리인지에 따라 분위기의 무게감을 달리 선택하는 것도 팁입니다.</p>
+    <p>저는 개인적으로 처음 가보는 곳은 꼭 1차로만 잡고, 분위기가 맞으면 연장하는 루트를 선호합니다. 너무 큰 기대를 하고 가는 것보다 가벼운 마음으로 들어갔다가 만족하면 오래 기억에 남더라고요.</p>
 
-        <section id="features" class="section">
-            <div class="container">
-                <h2 class="section-title">하이엔드 음향 시스템 분석</h2>
-                <div class="content-grid">
-                    <div class="card">
-                        <h3>스튜디오급 사운드</h3>
-                        <p>일반 코인노래방과 차별화된 전문 녹음용 마이크와 고출력 앰프를 사용하여, 가수의 보컬 톤을 가장 자연스럽게 재현합니다. 음의 왜곡을 최소화하는 DSP(Digital Signal Processing) 기술이 적용되었습니다.</p>
-                    </div>
-                    <div class="card">
-                        <h3>광범위한 곡 데이터베이스</h3>
-                        <p>최신 아이돌 곡부터 인디, 발라드, 그리고 해외 히트곡까지 실시간으로 업데이트되는 방대한 라이브러리를 보유하고 있습니다. 검색 알고리즘을 통해 원하는 곡을 즉시 선곡할 수 있습니다.</p>
-                    </div>
-                    <div class="card">
-                        <h3>스마트 예약 시스템</h3>
-                        <p>모바일 앱을 통한 실시간 부스 공실 현황 확인 및 사전 예약이 가능합니다. 대기 시간 없이 프라이빗한 공간을 즉시 활용할 수 있어 시간 관리가 중요한 이용자에게 최적화되어 있습니다.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <ul class="r-list-brpt">
+      <li><strong>2~3인</strong> — 역 근처 프라이빗 룸 위주 / 한적한 골목 쪽 추천</li>
+      <li><strong>4~6인</strong> — 도로변 업소나 넓은 공간 확보 가능한 곳 / 사전 예약 필수</li>
+      <li><strong>7인 이상</strong> — 단체 전용실 있는 곳으로 범위를 좁히는 게 편함</li>
+    </ul>
 
-        <section id="environment" class="section">
-            <div class="container">
-                <h2 class="section-title">프라이버시 및 위생 관리</h2>
-                <div class="text-block">
-                    <p><strong>1. 완전 차단형 방음 구조:</strong> 외부 소음의 유입과 내부 소음의 유출을 완벽하게 차단하는 2 중 방음 도어와 흡음 패널을 설치하여, 누구의 눈치도 보지 않고 자유롭게 노래할 수 있는 환경을 조성했습니다.</p>
-                    <p><strong>2. 의료 등급 살균 시스템:</strong> 매 이용 сеан트 종료 후 자동 UV-C 살균 램프가 작동하며, 마이크와 리모컨은 항균 코팅 처리되었습니다. 이는 감염병 예방을 위한 필수적인 조치입니다.</p>
-                    <p><strong>3. 인간공학적 인테리어:</strong> 장시간 이용에도 피로감을 덜어주는 안락한 좌석과 눈의 피로를 줄이는 간접 조명을 적용하여, 고급 라운지와 같은 편안한 분위기를 연출합니다.</p>
-                </div>
-            </div>
-        </section>
+    <h2 style="font-size:1.4rem;margin:1.8rem 0 1rem;">🧭 첫 방문자를 위한 준비 리스트</h2>
+    <p>처음 방문할 때는 네비게이션만 믿고 가면 입구를 찾아 헤맬 수 있습니다. 대흥 쪽은 건물 간판이 보이는 각도나 골목 진입로가 생각보다 헷갈리는 곳이 몇 군데 있어요. 도착 전에 업소의 정확한 건물 번호와 진입 방향을 한 번 더 확인하는 습관을 들이면 좋습니다.</p>
+    <p>주차는 가능하면 대중교통이나 대리운전을 기준으로 계획하는 게 속 편합니다. 주차 공간이 협소한 곳이 많고, 인근 유료 주차장도 자리가 많지 않아서 주말에는 한 바퀴 돌아야 할 수도 있어요. 예약할 때 주차 여부를 함께 묻는 걸 추천합니다.</p>
+    <p>결제 방식도 업소마다 차이가 있으니 미리 확인하는 게 좋습니다. 카드 결제가 가능한 곳이 대부분이지만 간혹 일부 항목이 별도로 구분되는 경우도 있으니까 첫 방문이라면 입장 전에 전체 금액대를 물어보는 편이 안심됩니다.</p>
 
-        <section id="faq" class="section">
-            <div class="container">
-                <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
-                <div class="faq-item">
-                    <span class="faq-question">Q. 미성년자도 이용이 가능한가요?</span>
-                    <p class="faq-answer">A. 네, 보호자의 동의 하에 미성년자도 이용 가능합니다. 단, 심야 시간대 (22:00 이후) 에는 보호자 동반이 필수일 수 있으니 방문 전 확인하시기 바랍니다.</p>
-                </div>
-                <div class="faq-item">
-                    <span class="faq-question">Q. 결제 방식은 어떻게 되나요?</span>
-                    <p class="faq-answer">A. 모든 부스는 무인 결제 시스템을 갖추고 있으며, 신용카드, 체크카드, 모바일 간편 결제 (카카오페이, 네이버페이 등) 를 지원합니다. 동전투입는 불가능합니다.</p>
-                </div>
-                <div class="faq-item">
-                    <span class="faq-question">Q. 음식물 반입이 가능한가요?</span>
-                    <p class="faq-answer">A. 음료수는 반입이 가능하나, 냄새가 강하거나 국물이 있는 음식물은 제한될 수 있습니다. 자세한 규정은 각 지점의 안내문을 참고해 주시기 바랍니다.</p>
-                </div>
-            </div>
-        </section>
-    </main>
+    <blockquote>한 번은 친구 생일이라고 해서 급하게 찾아갔다가 주차 때문에 20분을 헤맨 적이 있어요. 그 뒤로는 무조건 도착 10분 전에 주변을 한 바퀴 돌아보는 루틴이 생겼습니다.</blockquote>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Mangwon Premium Guide. All rights reserved.</p>
-            <p>본 정보는 지역 내 우수 시설을 객관적인 기준으로 선별하여 제공하며, 상업적 광고와 무관합니다.</p>
-        </div>
-    </footer>
+    <h2 style="font-size:1.4rem;margin:1.8rem 0 1rem;">📌 상황별 분기 — 이럴 땐 이렇게</h2>
+    <p><strong>✔️ 회식 자리인데 분위기가 너무 조용하면 어색할까 걱정된다면?</strong><br>오픈된 구조보다는 룸 형태를 고르되, 내부에 음향 시스템이나 간단한 엔터테인먼트 요소가 있는 곳이 좋습니다. 대흥 쪽 몇몇 업소는 룸 안에서 자체적으로 분위기를 띄울 수 있는 장비를 갖춰둔 곳이 있어요.</p>
+    <p><strong>✔️ 이성 친구와 가볼 만한 곳이 궁금하다면?</strong><br>너무 화려한 분위기보다는 무드가 있는 조명과 편안한 대화가 가능한 공간이 적합합니다. 역에서 조금 떨어진 골목 쪽에 이런 스타일의 장소가 몇 군데 숨어 있어요.</p>
+    <p><strong>✔️ 혼자서 먼저 가보고 결정해야 한다면?</strong><br>가능하면 이른 시간(오후 8시 전후)에 방문해서 자리와 분위기를 살펴보는 걸 추천합니다. 직원분들한테 이것저것 물어보면 친절하게 알려주는 편이에요.</p>
 
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+    <hr style="border:none;border-top:1px solid #e8e2da;margin:2rem 0;">
+
+    <h2 style="font-size:1.4rem;margin:1.8rem 0 1rem;">❓ 자주 묻는 질문</h2>
+
+    <div class="q-wrap-p3hy">
+      <strong>대흥 유흥 지역, 처음 가도 부담 없을까요?</strong>
+      <p>네, 첫 방문자도 충분히 즐길 수 있습니다. 다만 업소마다 분위기 차이가 있으니 이 글에서 설명한 동선과 업종 특징을 참고해서 본인 스타일에 맞는 곳을 고르면 만족도가 높아요. 특히 인원과 시간대를 미리 정해두면 훨씬 수월합니다.</p>
+    </div>
+
+    <div class="q-wrap-p3hy">
+      <strong>예약은 꼭 해야 하나요?</strong>
+      <p>주말이나 공휴일에는 예약이 거의 필수라고 봐야 합니다. 평일 이른 시간대라면 예약 없이도 가능한 곳이 있지만, 원하는 공간(예: 룸 타입, 창가 자리 등)이 있다면 미리 연락하는 게 좋습니다. 인원이 5명 이상이면 예약이 안전합니다.</p>
+    </div>
+
+    <div class="q-wrap-p3hy">
+      <strong>대흥역에서 각 업소까지 걸어서 가나요?</strong>
+      <p>대부분 도보 5~10분 거리에 있습니다. 다만 위치에 따라 골목 구조가 복잡한 구간이 있어서, 처음 가는 곳은 지도 앱의 위성 뷰로 건물 모양을 미리 확인해두면 헤맬 일이 적습니다. 역 쪽이 가장 접근성이 좋고, 도보 10분 이상이면 대부분 주차나 택시 이용을 고려합니다.</p>
+    </div>
+
+    <div class="q-wrap-p3hy">
+      <strong>주변에 편의점이나 간단히 먹을 곳도 있나요?</strong>
+      <p>역 주변에 편의점과 간단한 식사가 가능한 곳이 있어요. 유흥 업소 안에서도 안주와 간단한 식사 메뉴를 제공하는 경우가 많지만, 가벼운 식사가 필요하면 방문 전에 근처에서 미리 해결하는 것도 방법입니다. 골목 쪽으로 들어가면 식당이 드문드문 있으니까 동선에 포함시켜도 좋고요.</p>
+    </div>
+
+    <div class="q-wrap-p3hy">
+      <strong>방문 기록 형식으로 된 다른 글도 있나요?</strong>
+      <p>이 사이트의 다른 페이지들에서 각기 다른 주제로 정리한 내용을 보실 수 있습니다. 가이드 페이지에서는 더 구체적인 상황별 추천을, 장소 페이지에서는 개별 업소에 대한 메모를 다루고 있으니 필요에 따라 함께 참고해보세요.</p>
+    </div>
+
+    <hr style="border:none;border-top:1px solid #e8e2da;margin:2rem 0;">
+
+    <p>글로만 읽으면 막상 현장에서 다르게 느껴질 수도 있어요. 저도 처음엔 정보를 찾아보고 갔는데 실제 와보니 예상과 좀 달라서 당황한 적이 있었거든요. 그래도 대흥 쪽은 블록 단위로 분위기가 명확히 나뉘어 있어서 한 번 동선을 익히면 다음부는 훨씬 자유롭게 움직일 수 있습니다.</p>
+    <p>이 노트가 여러분의 선택에 조금이라도 도움이 되면 좋겠네요. 각자의 모임 스타일과 취향에 맞는 장소를 찾아서 편안한 시간 보내시길 바랍니다. 궁금한 점은 더 살펴보면서 천천히 결정해보세요.</p>
+  </div>
+</div>
 </body>
 </html>
