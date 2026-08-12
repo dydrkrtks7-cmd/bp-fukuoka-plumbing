@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (3/3) · fukuoka-plumbing</title>
+  <meta name="description" content="fukuoka-plumbing에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://shirtslab-mapo.xyz/posts-3.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS DNA: Editorial Luxury / Ivory-Ink */
+ :root {
+ --bg-color: #FDFBF7; /* Ivory */
+ --text-primary: #1A1A1A; /* Ink */
+ --text-secondary: #4A4A4A;
+ --accent-color: #A68B5C; /* Muted Gold */
+ --border-color: #E0E0E0;
+ --font-main: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+ --font-serif: 'Times New Roman', serif;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-primary);
+ font-family: var(--font-main);
+ line-height: 1.7;
+ letter-spacing: -0.01em;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ a {
+ text-decoration: none;
+ color: inherit;
+ transition: color 0.3s ease;
+ }
+
+ a:hover {
+ color: var(--accent-color);
+ }
+
+ /* Layout */
+ .container {
+ max-width: 1024px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+
+ header {
+ padding: 30px 0;
+ border-bottom: 1px solid var(--border-color);
+ position: sticky;
+ top: 0;
+ background-color: var(--bg-color);
+ z-index: 1000;
+ }
+
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ }
+
+ .nav-links a {
+ font-size: 0.95rem;
+ font-weight: 500;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ }
+
+ /* Hamburger Menu */
+ .menu-toggle {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+
+ .menu-toggle span {
+ width: 25px;
+ height: 2px;
+ background-color: var(--text-primary);
+ transition: 0.3s;
+ }
+
+ /* Hero Section */
+ .hero {
+ padding: 100px 0;
+ text-align: center;
+ }
+
+ .hero h1 {
+ font-family: var(--font-serif);
+ font-size: 3.5rem;
+ font-weight: 400;
+ margin-bottom: 20px;
+ line-height: 1.2;
+ }
+
+ .hero p {
+ font-size: 1.1rem;
+ color: var(--text-secondary);
+ max-width: 600px;
+ margin: 0 auto;
+ }
+
+ /* Content Sections */
+ .section {
+ padding: 80px 0;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .section-title {
+ font-family: var(--font-serif);
+ font-size: 2rem;
+ margin-bottom: 40px;
+ text-align: center;
+ }
+
+ .content-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 40px;
+ }
+
+ .card {
+ background: #fff;
+ padding: 40px;
+ border: 1px solid var(--border-color);
+ transition: transform 0.3s ease;
+ }
+
+ .card:hover {
+ transform: translateY(-5px);
+ border-color: var(--accent-color);
+ }
+
+ .card h3 {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ margin-bottom: 15px;
+ }
+
+ .card p {
+ color: var(--text-secondary);
+ font-size: 0.95rem;
+ }
+
+ .text-block {
+ max-width: 800px;
+ margin: 0 auto;
+ text-align: justify;
+ }
+
+ .text-block p {
+ margin-bottom: 20px;
+ }
+
+ .highlight {
+ color: var(--accent-color);
+ font-weight: 600;
+ }
+
+ /* FAQ */
+ .faq-item {
+ margin-bottom: 20px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .faq-question {
+ font-weight: 700;
+ margin-bottom: 10px;
+ display: block;
+ }
+
+ .faq-answer {
+ color: var(--text-secondary);
+ }
+
+ /* Footer */
+ footer {
+ padding: 50px 0;
+ text-align: center;
+ font-size: 0.85rem;
+ color: var(--text-secondary);
+ border-top: 1px solid var(--border-color);
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: var(--bg-color);
+ padding: 20px;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .nav-links.active {
+ display: flex;
+ }
+
+ .menu-toggle {
+ display: flex;
+ }
+
+ .hero h1 {
+ font-size: 2.5rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (3/3) · fukuoka-plumbing">
+  <meta property="og:description" content="fukuoka-plumbing에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://shirtslab-mapo.xyz/posts-3.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container">
+ <nav>
+ <div class="logo">MANGWON GUIDE</div>
+ <div class="menu-toggle" onclick="toggleMenu()">
+ 
+ 
+ 
+ </div>
+ <div class="nav-links">
+ <a href="#overview">개요</a>
+ <a href="#features">시스템</a>
+ <a href="#environment">환경</a>
+ <a href="#faq">자주 묻는 질문</a>
+ 
+ </div>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 44개 · 3/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-001.html">망원 코노? 에이, 뻔한 데 말고 &amp;#39;데이터 찐따&amp;#39;가 짚어주는 리얼 바이브.</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-002.html">내 경험으로 말하는 MK울트라 프로젝트와 보잉 MCAS의 내부고발 이야기</a>
+        <p class="post-item__summary">내가 최근에 보잉 MCAS의 내부고발에 대해 조사하고 있던 중, MK울트라 프로젝트의 1972년 의회 청문회에서 공개되지 않은 서브프로젝트 3건의 코드명과 목적에 대해 알게 되었다. 이에 대해 더 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/review-003-5vl660.html">망원 코인노래방 추천정보 및 연남 마사지 안내</a>
+        <p class="post-item__summary">망원 지역에서 조용하고 쾌적한 환경을 찾아 코인노래방을 탐색하는 경우가 많습니다. 노래방 선택은 단순한 음향 시설 여부를 넘어, 쾌적한 실내 온기와 위생 상태, 그리고 편리한 접근성이 종합적으로 고</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/t3link-002-5zu7m8.html">망원 코인노래방 추천정보</a>
+        <p class="post-item__summary">망원동은 골목 구석구석 매력이 넘치는 곳이지만, 막상 친구들과 갑작스럽게 노래방을 찾으려면 어디가 좋을지 고민될 때가 많습니다. 특히 코인노래방은 일반 노래방보다 접근성이 좋지만, 매장마다 음향 시</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <span class="pager__current">3</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>

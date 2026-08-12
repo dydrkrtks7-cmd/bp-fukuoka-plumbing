@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/3) · fukuoka-plumbing</title>
+  <meta name="description" content="fukuoka-plumbing에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://shirtslab-mapo.xyz/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS DNA: Editorial Luxury / Ivory-Ink */
+ :root {
+ --bg-color: #FDFBF7; /* Ivory */
+ --text-primary: #1A1A1A; /* Ink */
+ --text-secondary: #4A4A4A;
+ --accent-color: #A68B5C; /* Muted Gold */
+ --border-color: #E0E0E0;
+ --font-main: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+ --font-serif: 'Times New Roman', serif;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-primary);
+ font-family: var(--font-main);
+ line-height: 1.7;
+ letter-spacing: -0.01em;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ a {
+ text-decoration: none;
+ color: inherit;
+ transition: color 0.3s ease;
+ }
+
+ a:hover {
+ color: var(--accent-color);
+ }
+
+ /* Layout */
+ .container {
+ max-width: 1024px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+
+ header {
+ padding: 30px 0;
+ border-bottom: 1px solid var(--border-color);
+ position: sticky;
+ top: 0;
+ background-color: var(--bg-color);
+ z-index: 1000;
+ }
+
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: 0.05em;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ }
+
+ .nav-links a {
+ font-size: 0.95rem;
+ font-weight: 500;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ }
+
+ /* Hamburger Menu */
+ .menu-toggle {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+
+ .menu-toggle span {
+ width: 25px;
+ height: 2px;
+ background-color: var(--text-primary);
+ transition: 0.3s;
+ }
+
+ /* Hero Section */
+ .hero {
+ padding: 100px 0;
+ text-align: center;
+ }
+
+ .hero h1 {
+ font-family: var(--font-serif);
+ font-size: 3.5rem;
+ font-weight: 400;
+ margin-bottom: 20px;
+ line-height: 1.2;
+ }
+
+ .hero p {
+ font-size: 1.1rem;
+ color: var(--text-secondary);
+ max-width: 600px;
+ margin: 0 auto;
+ }
+
+ /* Content Sections */
+ .section {
+ padding: 80px 0;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .section-title {
+ font-family: var(--font-serif);
+ font-size: 2rem;
+ margin-bottom: 40px;
+ text-align: center;
+ }
+
+ .content-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 40px;
+ }
+
+ .card {
+ background: #fff;
+ padding: 40px;
+ border: 1px solid var(--border-color);
+ transition: transform 0.3s ease;
+ }
+
+ .card:hover {
+ transform: translateY(-5px);
+ border-color: var(--accent-color);
+ }
+
+ .card h3 {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ margin-bottom: 15px;
+ }
+
+ .card p {
+ color: var(--text-secondary);
+ font-size: 0.95rem;
+ }
+
+ .text-block {
+ max-width: 800px;
+ margin: 0 auto;
+ text-align: justify;
+ }
+
+ .text-block p {
+ margin-bottom: 20px;
+ }
+
+ .highlight {
+ color: var(--accent-color);
+ font-weight: 600;
+ }
+
+ /* FAQ */
+ .faq-item {
+ margin-bottom: 20px;
+ padding-bottom: 20px;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .faq-question {
+ font-weight: 700;
+ margin-bottom: 10px;
+ display: block;
+ }
+
+ .faq-answer {
+ color: var(--text-secondary);
+ }
+
+ /* Footer */
+ footer {
+ padding: 50px 0;
+ text-align: center;
+ font-size: 0.85rem;
+ color: var(--text-secondary);
+ border-top: 1px solid var(--border-color);
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: var(--bg-color);
+ padding: 20px;
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .nav-links.active {
+ display: flex;
+ }
+
+ .menu-toggle {
+ display: flex;
+ }
+
+ .hero h1 {
+ font-size: 2.5rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/3) · fukuoka-plumbing">
+  <meta property="og:description" content="fukuoka-plumbing에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://shirtslab-mapo.xyz/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container">
+ <nav>
+ <div class="logo">MANGWON GUIDE</div>
+ <div class="menu-toggle" onclick="toggleMenu()">
+ 
+ 
+ 
+ </div>
+ <div class="nav-links">
+ <a href="#overview">개요</a>
+ <a href="#features">시스템</a>
+ <a href="#environment">환경</a>
+ <a href="#faq">자주 묻는 질문</a>
+ 
+ </div>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 44개 · 1/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-001-d2cx6k.html">홍대에서 배운다, 망원 코인노래방 고를 때 &amp;#39;이 조건&amp;#39; 하나로 생사가 갈렸다</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-001-ewm1v2.html">망원 코인노래방에서 절판된 비너스 확장을 5만원에 사온 뻘짓 후기</a>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-003-1awvydk.html">망원 코인노래방 추천정보</a>
+        <p class="post-item__summary">망원동 일대에서 소규모 모임을 기획할 때 코인노래방은 훌륭한 선택지입니다. 하지만 단순히 노래방이 많다고 해서 아무 곳이나 들어가는 것은 금물입니다. 가장 먼저 고려해야 할 것은 방문 인원이 한 방</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-002-1n3ex7y.html">구글 트렌드가 먼저 알았다? 스노든 슬라이드 7장, 시차 분석이 밝힌 침묵의 구간</a>
+        <p class="post-item__summary">2013년 6월 6일, 오후 9시 17분. 당신이 망원 코인노래방에서 ‘OST 메들리’를 검색할 즈음, 전 세계 검색 서버에는 특정 키워드가 270% 급등하는 패턴이 찍혔다. 문제는 그 키워드가 ‘</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-1272g0u.html">망원 코인노래방 추천정보 현장에서 놓치기 쉬운 포인트를 기록해봤다</a>
+        <p class="post-item__summary">아, 진짜... 이런 상황을 겪은 전직 업주들이 얼마나 많았는지... 월매출이 3000원을 넘긴 창업자들도, 몇 달만에 무너졌던 진짜 원가는 어디까지였을까?</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-001.html">망원 코인노래방 이용 안내: 처음 방문 전 알아두면 좋은 정보</a>
+        <p class="post-item__summary">망원동 일대에서 코인노래방을 찾는 이들이 늘면서, 예약 없이 짧은 시간 동안 부담 없이 노래를 즐길 수 있는 공간에 대한 관심도 함께 커지고 있습니다. 코인노래방은 기존 노래방과 달리 방을 통째로 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-002.html">망원 코인노래방과 기존 노래방, 무엇이 다를까</a>
+        <p class="post-item__summary">같은 노래방이라는 이름이 붙어 있어도 코인노래방과 시간 단위로 방을 빌리는 기존 노래방은 운영 방식에서 여러 차이를 보입니다. 망원 지역에서 노래방을 찾는 경우, 두 형태의 차이를 먼저 파악해 두면</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-003.html">망원에서 코인노래방을 고를 때 확인할 체크리스트</a>
+        <p class="post-item__summary">망원동은 지하철 6호선 망원역을 중심으로 주거지와 상권이 함께 형성된 지역으로, 합정과 상수 방향 상권과도 가깝게 이어져 있습니다. 이런 위치 특성 때문에 망원 일대에는 여러 형태의 코인노래방이 자</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-004.html">망원 코인노래방 자주 묻는 질문</a>
+        <p class="post-item__summary">망원 지역에서 코인노래방을 처음 이용하려는 경우 결제 방식이나 운영 시간과 관련해 궁금한 점이 많습니다. 아래에서 자주 나오는 질문을 정리했습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1104.html">망원 코인노래방 추천정보 선택 전에 보는 마포 코인노래방 방음 시설 비교 가이드 체크포인트</a>
+        <p class="post-item__summary">망원에서 망원 코인노래방 추천정보를 찾는 사람은 대체로 빠른 결론을 원하지만, 빠른 결론이 항상 좋은 선택은 아닙니다. 비슷한 페이지라도 설명의 순서와 근거가 다르면 신뢰도는 달라집니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-112.html">gemini coverage 20260705 112</a>
+        <p class="post-item__summary">코인노래방을 처음 접하면 부스, 정산, 반주기처럼 매장에서 자주 쓰이는 표현이 낯설게 느껴질 수 있습니다. 망원 지역에서 코인노래방을 이용하기 전 알아두면 도움이 되는 용어를 정리했습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-142.html">마포/합정 인디 소셜 라운지 가이드</a>
+        <p class="post-item__summary">망원에서 코인노래방을 이용하려는 이들이 자주 저지르는 실수 몇 가지를 미리 알아두면 방문 당일 당황하는 일을 줄일 수 있습니다. 대부분은 사전에 조금만 확인해도 피할 수 있는 부분입니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-163.html">마포 유흥 투명 정찰제 가격 정보 디렉토리</a>
+        <p class="post-item__summary">망원 지역에서 코인노래방을 찾는 이용자가 늘면서, 매장을 고르기 전에 확인해두면 좋은 기본 정보를 정리했다. 코인노래방은 별도 예약 없이 원하는 시간에 곡 수만큼 요금을 지불하는 방식이 일반적이며,</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0722.html">망원 코인노래방 추천정보 – 편리와 혁신이 어우러진 밤문화 체험</a>
+        <p class="post-item__summary">망원 지역에 있는 코인노래방은 편리함과 최신 기술이 결합된 공간으로, 가맹점마다 독특한 분위기를 제공합니다. 음성 인식 및 블록체인 기반 결제 시스템을 도입해 손님들의 편의성을 높이고, 인공지능을 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0723.html">망원 코인노래방 찾는다면 놓치면 안 될 포인트</a>
+        <p class="post-item__summary">망원동은 홍대와 합정 사이에서 나름의 색깔을 가진 동네로 자리 잡았다. 골목골목 작은 가게들이 들어서 있고 유동 인구에 비해 코인노래방 밀도가 꽤 높은 편이다. 실제로 망원역 근처만 둘러봐도 5곳 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0724.html">망원 코인노래방 추천정보: 선택과 이용 팁</a>
+        <p class="post-item__summary">망원에 위치한 코인노래방은 빠른 입구와 깨끗한 음향 시설을 자랑합니다. 주변에는 버스정류장이 가까워 출근 시간에도 무리 없이 찾아갈 수 있으며, 주차 공간도 넉넉해 차량 이용자에게도 편리합니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260707-0725.html">망원동 코인노래방 추천, 가볍게 즐기는 가성비 노래 팁</a>
+        <p class="post-item__summary">망원동은 맛집과 카페 골목으로 이미 잘 알려진 동네지만, 요즘은 코인노래방을 찾는 젊은 방문객도 눈에 띄게 늘었다. 한두 곡만 부르고 싶을 때 부담 없는 가격대로 이용할 수 있어, 동네 주민은 물론</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0017.html">망원 코인노래방 추천정보 확인하며 살피는 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</a>
+        <p class="post-item__summary">동네의 숨겨진 장소를 찾다가 망원 코인노래방 추천정보를 검색하는 상황을 가정해 봅니다. 처음 방문하는 시설에서 음향 설비가 고장 났거나 결제 키오스크가 먹통이라면 이용자는 당황하게 마련입니다. 웹사</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0018.html">망원 코인노래방 추천정보 활용하는 4</a>
+        <p class="post-item__summary">많은 이들이 자동화 기술이 단순히 코드를 짜는 것에 불과하다고 생각하며 접근하지만, 이는 큰 오해입니다. 망원 코인노래방 추천정보를 찾는 사람들이 단순히 노래방을 찾는 것이 아니라 쾌적한 환경과 최</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0019.html">망원 코인노래방 추천정보 찾는 분을 위한 정보 페이지</a>
+        <p class="post-item__summary">성공적인 웹사이트 운영을 위해서는 적절한 인프라 확보와 올바른 키워드 전략, 그리고 신뢰도 높은 연결 고리가 필수적으로 충족되어야 합니다. 망원 코인노래방 추천정보를 공유하는 블로그가 건강하게 유지</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
